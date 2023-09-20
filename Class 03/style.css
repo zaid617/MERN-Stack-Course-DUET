@@ -1,0 +1,59 @@
+/* universal selector */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.para{
+
+    font-size: 30px;
+    color: brown;
+
+}
+
+.container{
+    /* apply border */
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+
+    /* short hand border */
+
+    border: 2px solid black; 
+
+    /* applying padding */
+
+    padding: 10px;
+
+    /* padding different sides */
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    /* applying margin */
+
+    margin: 20px;
+
+    /* margin different sides */
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container2{
+    background-color: brown;
+    color: white;
+}
+
+.pseudo:hover{
+    background-color: blueviolet;
+}
+
+.width-height{
+    width: 100px;
+    height: 100px;
+}
