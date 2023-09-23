@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .hidden-div {
+        display: none; /* Initially hide the div */
+      }
+
+      .hover-button:hover + .hidden-div {
+        display: block; /* Show the div when button is hovered */
+      }
+    </style>
+  </head>
+  <body>
+    <button class="hover-button">Hover Me</button>
+    <div class="hidden-div">This is a hidden div</div>
+  </body>
+</html>

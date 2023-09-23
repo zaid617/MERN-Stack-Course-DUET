@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <style>
+        .h{
+            height: 400px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!-- bootstrap container class with background and text-align classes -->
+    
+    <div class="container-fluid bg-success text-center p-2 ">
+        
+        <h1 class="text-light">Hello, world !</h1>
+        
+    </div>
+
+    <!-- bootstrap flex , row and height classes -->
+
+    <div class="row ">
+        <div class="col-md-4 justify-content-center h fs-1 d-flex align-items-center h bg-primary-subtle text-emphasis-primary">primary-subtle</div>
+        <div class="col-md-4 justify-content-center h fs-1 d-flex align-items-center h bg-primary text-white">primary</div>
+        <div class="col-md-4 justify-content-center h fs-1 d-flex align-items-center h bg-success-subtle text-emphasis-success">success-subtle</div>
+        <div class="col-md-4 justify-content-center h fs-1 d-flex align-items-center h bg-secondary text-white">secondary</div>
+        <div class="col-md-4 justify-content-center h fs-1 d-flex align-items-center h bg-secondary-subtle text-emphasis-secondary">secondary-subtle</div>
+        <div class="col-md-4 justify-content-center h fs-1 d-flex align-items-center h bg-success text-white">success</div>
+        <div class="col-md-4 justify-content-center h fs-1 d-flex align-items-center h bg-danger text-white">danger</div>
+        <div class="col-md-4 justify-content-center h fs-1 d-flex align-items-center h bg-warning text-dark">warning</div>
+        <div class="col-md-4 justify-content-center h fs-1 d-flex align-items-center h bg-danger-subtle text-emphasis-danger">danger-subtle</div>
+    </div>
+
+    <!-- bootstrap margin and padding classes -->
+
+    <div class="container">
+    <div class="container-fluid bg-success text-white pt-3 m-2 border border-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aspernatur, obcaecati culpa sint minus accusantium sequi ea quod sed praesentium illo ipsa hic consequuntur, amet tenetur quo eius maiores recusandae.</div>
+    <div class="container-fluid bg-success text-white pb-3 m-2 border border-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aspernatur, obcaecati culpa sint minus accusantium sequi ea quod sed praesentium illo ipsa hic consequuntur, amet tenetur quo eius maiores recusandae.</div>
+    <div class="container-fluid bg-success text-white pr-3 m-2 border border-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aspernatur, obcaecati culpa sint minus accusantium sequi ea quod sed praesentium illo ipsa hic consequuntur, amet tenetur quo eius maiores recusandae.</div>
+    <div class="container-fluid bg-success text-white pl-3 m-2 border border-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aspernatur, obcaecati culpa sint minus accusantium sequi ea quod sed praesentium illo ipsa hic consequuntur, amet tenetur quo eius maiores recusandae.</div>
+    <div class="container-fluid bg-success text-white p-3 m-2 border border-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aspernatur, obcaecati culpa sint minus accusantium sequi ea quod sed praesentium illo ipsa hic consequuntur, amet tenetur quo eius maiores recusandae.</div>
+    </div>
+
+    <!-- bootstrap shadow -->
+
+    <div class="container-fluid shadow p-4 m-1 ">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit debitis hic atque excepturi nulla, soluta harum sit adipisci ut tenetur aspernatur reiciendis, quaerat molestias quasi itaque sequi, nesciunt veritatis tempora.
+    </div>
+
+    <!-- bootstrap table -->
+
+    <table class="table table-striped table-border table-hover table-borderless table-primary align-middle">
+        <tr >
+            <th>Sno.</th>
+            <th>Name</th>
+            <th>Father Name</th>
+            <th>Age</th>
+        </tr>
+
+        <tr>
+            <td>01</td>
+            <td>Zayan</td>
+            <td>Ahmed</td>
+            <td>19</td>
+        </tr>
+                <tr>
+            <td>02</td>
+            <td>Usman</td>
+            <td>Ahmed</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>Tahir</td>
+            <td>Ahmed</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>04</td>
+            <td>Shayan</td>
+            <td>Ahmed</td>
+            <td>19</td>
+        </tr>
+        
+    </table>
+
+    <!-- bootstrap buttons -->
+
+    <button class="btn btn-outline-primary"> Click Me</button>
+    <button class="btn btn-outline-success"> Click Me</button>
+    <button class="btn btn-outline-danger"> Click Me</button>
+
+    <!-- bootstrap card -->
+
+     <div class="container m-5">
+        <div class="card" style="width: 18rem;">
+            <img src="https://static.vecteezy.com/system/resources/previews/019/896/008/original/male-user-avatar-icon-in-flat-design-style-person-signs-illustration-png.png" class="card-img-top p-3" alt="..." style="width: 80px">
+            <div class="card-body">
+              <h5 class="card-title">Zayan Ahmed</h5>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, aliquam!</p>
+              <a href="#" class="btn btn-primary">Click Me</a>
+            </div>
+          </div>
+     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
