@@ -13,6 +13,89 @@
   </head>
   <body>
 
+    <!-- Find Sum Modal -->
+<button type="button"  class="btn btn-primary w-100 m-1" data-toggle="modal" data-target="#exampleModal">
+  Find Sum
+</button>
+  <!-- join Name Modal -->
+<button type="button"  class="btn btn-primary w-100 m-1" data-toggle="modal" data-target="#exampleModal2">
+  Print Full Name
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Find Sum</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group p-1">
+        <input type="number" class="form-control" id="num_1" aria-describedby="emailHelp" placeholder="Enter 1st Number">
+      </div>
+      <div class="form-group p-1">
+        <input type="number" class="form-control" id="num_2" aria-describedby="emailHelp" placeholder="Enter 2nd Number">
+      </div>
+      </div>
+      <div class="modal-body" >
+        <p id="sum"></p>
+    </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="findSum()">Sum</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Print Full Name</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group p-1">
+          <input type="text" class="form-control" id="first" aria-describedby="emailHelp" placeholder="Enter first Name">
+        </div>
+        <div class="form-group p-1">
+          <input type="text" class="form-control" id="last" aria-describedby="emailHelp" placeholder="Enter last Name">
+        </div>
+      </div>
+      <div class="modal-body" >
+          <p id="fullName"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="fullName()">Join</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+  const findSum = ()=>{
+    let num_1 = +document.getElementById('num_1').value;
+    let num_2 = +document.getElementById('num_2').value;
+
+    document.getElementById('sum').innerText = "Sum Of "+ num_1 + " & " + num_2 + " = " + (num_1 + num_2);
+
+  }
+
+  const fullName = ()=>{
+    let first = document.getElementById('first').value;
+    let last = document.getElementById('last').value;
+
+    document.getElementById('fullName').innerText = first + last;
+  }
+
+</script>
     
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
