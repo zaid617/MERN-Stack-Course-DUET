@@ -28,7 +28,7 @@ Implementing authentication and authorization.
 Deploying your MERN application to a cloud platform.
 This repository contains code examples, exercises, and projects to help you practice and apply what you learn in the course.
 
-<h4>Prerequisites</h4>
+<h3>Prerequisites</h3>
 
 Before starting this course, you should have a basic understanding of:
 
@@ -46,7 +46,7 @@ bash
 Copy code
 git clone https://github.com/zaid617/MERN-Stack-Course-DUET.git
 Install the necessary dependencies for the course using the provided setup instructions.
->>>>>>> 6ab783b2323f65f2496aab34fe92cbe5decc61f1
+>>>>>>> 
 
 bash<br>
 Copy code<br>
