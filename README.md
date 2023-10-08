@@ -37,7 +37,7 @@ Clone this repository to your local machine:
 
 bash
 Copy code
-git clone https://github.com/zaid617/mern-stack-course.git
+git clone https://github.com/zaid617/MERN-Stack-Course-DUET.git
 Install the necessary dependencies for the course using the provided setup instructions.
 
 Explore the course materials in the lessons folder. Each lesson may have code samples and documentation.
@@ -57,7 +57,7 @@ This course is distributed under the MIT License. Feel free to use, modify, and 
 
 Happy learning and coding!
 
-Instructors: [YZaid Bin Tahir]
+Instructors: [Zaid Bin Tahir]
 Email: [zid6177@gmail.com]
 Website: [zaid-portfolio.netlify.app]
 
