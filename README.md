@@ -70,6 +70,6 @@ This course is distributed under the MIT License. Feel free to use, modify, and 
 
 Happy learning and coding!
 
-Instructors: Zaid Bin Tahir
-Email: zid6177@gmail.com
-Website: zaid-portfolio.netlify.app
+<b>Instructors</b>: Zaid Bin Tahir<br>
+<b>Email</b>: zid6177@gmail.com<br>
+<b>Website</b>: zaid-portfolio.netlify.app
