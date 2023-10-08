@@ -2,7 +2,7 @@ export default function Header() {
   return (
     <div>
 
-        <h1>This is a Header Component.</h1>
+        <h1>Header</h1>
     </div>
   )
 }

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Class 12</title>
+  </head>
+  <body>
+    <script>
+
+        let arr = [1,2,3,4,5,6,7,8,9,10,11,12];
+        let students = [
+          { name: "Zayan" , age: 25 , rollNo: 1},
+          { name: "Usman" , age: 22 , rollNo: 2},
+          { name: "Zahid" , age: 23 , rollNo: 3},
+          { name: "Tahir" , age: 27 , rollNo: 4},
+          { name: "Rayan" , age: 19 , rollNo: 5},
+        ] 
+
+         arr.map((x , i , arr)=>{
+          console.log(`${x} : is at ${i} index ... ${arr}`);
+        })
+
+         arr.filter((x , i , arr)=>{
+           console.log( x >= 5? x : null);
+        })
+         
+         arr.reduce((preValue , currValue , currIndex , arr)=>{
+            console.log(preValue + currValue);
+         })
+
+         students.map((student)=>{
+          console.log(`
+          name: ${student.name}
+          age: ${student.age}
+          rollNumber: ${student.rollNumber} 
+          `);
+         })
+
+         let findStudent = students.find((student)=>{
+            student.age === 19 ? student : null
+         })
+
+         let findStudentIndex = students.findIndex((student)=>{
+            student.age === 19 ? student : null
+         })
+
+    </script>
+  </body>
+</html>

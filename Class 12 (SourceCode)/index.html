@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Class 11</title>
+  </head>
+  <body>
+
+    <h1 id="h1"></h1>
+
+    <button onclick="clickFunction()"></button>
+
+    <script>
+
+      let name = "Zayan";
+      let age = 20;
+      const DOB = "20 Jan 1999";
+      
+      class Car{
+        constructor(model , cc , price){
+          model: this.model
+          cc: this.cc
+          price: this.price
+        }
+      }
+
+      const car  = new Car("Civic" , 1200 , 120000);
+      const car2  = new Car("Honda" , 1600 , 220000);
+      const car3  = new Car("CIty" , 1200 , 320000);
+
+      let myFuction = (x,y)=>{
+        console.log(x+y);
+      }
+
+      myFuction(2,3)
+
+      let sum= (...arg)=>{
+        
+        let sum = 0;
+
+        for (let arg of args) {
+          sum += arg;      
+        }
+
+      }
+
+      let x = sum(1,2,3,4,5,6,7,8,9,10);
+
+      let h1 = document.getElementById('h1')
+      h1.innerText = "Hello world!";
+      h1.style.color = "blue";
+      document.write("this is render with document.write");
+
+      const clickFunction = ()=>{
+        alert("this button is clicked")
+      }
+
+      
+
+    </script>
+  </body>
+</html>
