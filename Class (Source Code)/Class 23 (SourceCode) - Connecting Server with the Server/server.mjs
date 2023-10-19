@@ -1,6 +1,8 @@
 import { MongoClient } from "mongodb";
 import express from "express";
+import path from "path";
 import { ObjectId } from 'mongodb'
+const __dirname = path.resolve();
 
 const app = express();
 const PORT = process.env.PORT || 5001;
@@ -122,6 +124,8 @@ app.put("/update/:user/:newName", async (req, res) => {
 }
 
 });
+
+app.use(express.static(path.join(__dirname, "public")));
 
 app.listen(PORT, () => {
   console.log("listening on port : " + PORT);

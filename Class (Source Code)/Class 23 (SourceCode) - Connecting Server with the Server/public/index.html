@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.js"></script>
+    <title>Simple Form</title>
+</head>
+<body>
+    
+    <form onsubmit="sendData()">
+    <input type="text" id="name">
+    <input type="text" id="fname">
+    <input type="date" id="age">
+    </form>
+
+    <script>
+        
+        const sendData = async(e)=>{
+            e.preventDefault();
+          let name  =  document.getElementById('name');
+          let fname =  document.getElementById('fname');
+          let age   =  document.getElementById('age');
+          try{
+              let sendUser = axios.post(`/addUser/${fname}/${age}/${name}`)
+          }
+          catch(e){
+            new Error("Could not send user");
+          }
+        }
+
+    </script>
+
+</body>
+</html>
